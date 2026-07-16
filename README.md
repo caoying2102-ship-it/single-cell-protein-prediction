@@ -84,16 +84,16 @@ Two secondary metrics are also reported:
 | Model | Row-wise Pearson | Mean protein PCC | Median protein PCC | RMSE |
 |---|---:|---:|---:|---:|
 | Mean-profile | 0.7776 | Undefined | Undefined | 2.2916 |
-| Ridge | 0.8705 | 0.4088 | 0.3922 | 1.6815 |
+| Ridge | 0.8755 | 0.4088 | 0.3922 | 1.6815 |
 | Multi-output MLP | 0.8727 | 0.4084 | 0.3948 | 1.7076 |
 
-The MLP achieved the highest row-wise Pearson correlation, whereas Ridge
-achieved the lowest RMSE and a slightly higher mean protein-wise PCC.
-The differences between Ridge and MLP were small.
+On the Day 4 temporal validation set, Ridge achieved the best overall
+performance, with a mean row-wise Pearson correlation of **0.8755**,
+slightly outperforming the multi-output MLP (**0.8727**).
 
-These results suggest that the 50-dimensional PCA representation contains
-a largely linear predictive signal. Ridge therefore provides a strong,
-efficient and interpretable model for temporal RNA-to-protein prediction.
+The two models achieved nearly identical mean protein-wise PCC values
+(Ridge: **0.4088**; MLP: **0.4084**), while Ridge also obtained a lower
+RMSE (Ridge: **1.6815**; MLP: **1.7076**).
 
 ## Repository structure
 
