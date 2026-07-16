@@ -1,0 +1,43 @@
+seed: 42
+
+data:
+  rna: data/raw/train_cite_inputs.h5
+  protein: data/raw/train_cite_targets.h5
+  metadata: data/raw/metadata.csv
+  rna_key: train_cite_inputs
+  protein_key: train_cite_targets
+
+split:
+  train_days:
+    - 2
+    - 3
+  validation_days:
+    - 4
+
+features:
+  n_pca_components: 50
+  pca_solver: randomized
+  use_day: false
+  use_cell_type: false
+  use_composition: false
+  use_correlation_drift: false
+
+ridge:
+  alpha: 1.0
+
+mlp:
+  hidden_dims:
+    - 64
+    - 32
+  dropout: 0.2
+  learning_rate: 0.0001
+  batch_size: 256
+  epochs: 50
+  patience: 5
+
+output:
+  processed_dir: data/processed
+  feature_dir: data/features
+  result_dir: results
+  model_dir: models
+  log_dir: logs

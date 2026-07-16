@@ -1,0 +1,23 @@
+{
+  "rowwise_pearson": 0.8754520847888569,
+  "mean_proteinwise_pcc": 0.4087915509670984,
+  "median_proteinwise_pcc": 0.39219670766839576,
+  "rmse": 1.681452713710813,
+  "n_cells": 28145,
+  "n_proteins": 140,
+  "experiment": "EXP01_pca50_ridge",
+  "model": "Ridge",
+  "alpha": 1.0,
+  "n_pca_components": 50,
+  "train_days": [
+    2,
+    3
+  ],
+  "validation_days": [
+    4
+  ],
+  "training_seconds": 0.05585587723180652,
+  "random_seed": 42,
+  "pca_fit_on_training_only": true,
+  "uses_target_derived_features": false
+}

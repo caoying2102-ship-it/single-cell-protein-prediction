@@ -1,0 +1,30 @@
+{
+  "rowwise_pearson": 0.872682347857728,
+  "mean_proteinwise_pcc": 0.40840502360971614,
+  "median_proteinwise_pcc": 0.39476577491947695,
+  "rmse": 1.7075987192392001,
+  "n_cells": 28145,
+  "n_proteins": 140,
+  "experiment": "EXP02_pca50_multioutput_mlp",
+  "model": "Multi-output MLP",
+  "input_dim": 50,
+  "output_dim": 140,
+  "hidden_dims": [
+    64,
+    32
+  ],
+  "dropout": 0.2,
+  "best_epoch": 50,
+  "best_internal_validation_loss": 0.7772650431028743,
+  "training_seconds": 24.588650163728744,
+  "device": "cpu",
+  "train_days": [
+    2,
+    3
+  ],
+  "validation_days": [
+    4
+  ],
+  "day4_used_for_early_stopping": false,
+  "uses_target_derived_features": false
+}

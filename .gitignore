@@ -1,0 +1,51 @@
+# Raw and processed data
+data/raw
+data/processed/*
+data/features/*
+
+# Large prediction arrays
+results/**/validation_predictions.npy
+results/**/validation_targets.npy
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environments
+.venv/
+venv/
+env/
+
+# Editors and operating systems
+.vscode/
+.DS_Store
+
+# Logs
+logs/*
+*.log
+
+# Ignore the linked data directory itself
+data
+
+# Trained model weights
+models/
+*.pth
+*.pt
+*.ckpt
+
+# Other large single-cell files
+*.h5
+*.h5ad
+*.hdf5
+*.npz
+
+# R and macOS
+.Rhistory
+.RData
+
+*.npy

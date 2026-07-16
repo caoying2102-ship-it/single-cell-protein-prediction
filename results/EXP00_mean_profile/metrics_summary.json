@@ -1,0 +1,19 @@
+{
+  "rowwise_pearson": 0.7776212940503612,
+  "mean_proteinwise_pcc": null,
+  "median_proteinwise_pcc": null,
+  "rmse": 2.2916413461913647,
+  "n_cells": 28145,
+  "n_proteins": 140,
+  "experiment": "EXP00_mean_profile",
+  "model": "Training-set mean protein profile",
+  "uses_rna": false,
+  "uses_metadata": false,
+  "train_days": [
+    2,
+    3
+  ],
+  "validation_days": [
+    4
+  ]
+}
